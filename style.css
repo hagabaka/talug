@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0 1rem;
+  min-height: 90vh;
+}
+header {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  padding-top: 3.5rem;
+  padding-left: 5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+  background-image: url('talug.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.site-title {
+  margin: 0;
+  position: absolute;
+  left: 5rem;
+  right: 0;
+  top :0;
+  text-align: justify;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  color: darkturquoise;
+}
+.site-title::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+}
+.site-subtitle {
+  margin: 0 0 0.5rem;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: darkturquoise;
+  color: white;
+}
+nav li {
+  padding: 0.5em;
+  margin-bottom: -2px;
+  width: 10rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-bottom: 2px solid transparent;
+}
+nav .active {
+  font-weight: bold;
+  border-bottom-color: darkorange;
+}
+nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
