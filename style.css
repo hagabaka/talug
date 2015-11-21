@@ -21,12 +21,28 @@ body {
 .site-subtitle {
   display: none;
 }
+nav {
+  position: relative;
+  margin-bottom: 5ex;
+}
 nav li ul {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: darkcyan;
+  z-index: 10;
 }
-nav > ul, nav .active ul {
+nav li ul li {
+  font-size: smaller;
+}
+nav > ul {
+  background: darkturquoise;
+}
+nav > ul, nav li.active ul {
   padding: 0;
-  margin: 0 -1rem;
+  margin: 0 -1em;
   list-style-type: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -42,8 +58,8 @@ nav > ul, nav .active ul {
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-around;
-  background-color: darkturquoise;
   color: white;
+  z-index: 20;
 }
 nav li {
   padding: 0.5em;
@@ -106,7 +122,7 @@ footer {
     display: block;
     margin: 0 0 0.5rem;
   }
-  nav ul {
+  nav {
     position: absolute;
     top: 100%;
     left: 50%;
